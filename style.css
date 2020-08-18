@@ -1,0 +1,86 @@
+body {
+	background-color: #060d13;
+}
+.wrapper {
+	width: 800px;
+	height: 600px;
+	margin: 125px auto;
+	background-color: #001133;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.animation_1 {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: rgba(212, 217, 221, 0.2);
+	position: relative;
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation: live 0.7s alternate infinite;
+	animation-delay: 0.2s;
+}
+.play_button {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation: live 0.7s linear infinite alternate;
+}
+img {
+	width: 70px;
+	height: 70px;
+}
+.animation_2 {
+	width: 140px;
+	height: 140px;
+	background:rgba(226, 230, 233, 0.15);
+	border-radius: 50%;
+	position: relative;
+	position: absolute;
+	animation: live 0.7s linear alternate infinite;
+	animation-delay: 0.3s;
+}
+.animation_3 {
+	width: 160px;
+	height: 160px;
+	background: rgba(240, 242, 244, 0.2);
+	border-radius: 50%;
+	position: relative;
+	animation: live 0.7s alternate infinite;
+	animation-delay: 0.4s;
+}
+@keyframes live {
+
+	from{
+		transform: scale(1);
+	}
+
+	to{
+		transform: scale(0.9);
+	}
+
+}
+@keyframes live_1 {
+
+	from{
+		transform: scale(1);
+	}
+
+	to{
+		transform: scale(0.96);
+	}
+
+}
